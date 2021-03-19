@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #010202;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  max-width: 1146px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 56px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 0;
+}
+
+.logo {
+  display: block;
+}
+
+.user_img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.user_name {
+  color: #fff;
+  font-size: 16px;
+  line-height: 20;
+  margin-right: 15px;
+}
+
+.app {
+  background: linear-gradient(
+    90deg,
+    #010202 0%,
+    #010202 50%,
+    rgba(1, 2, 2, 0.2) 90.9%
+  );
+  min-height: 100vh;
+  color: white;
+}
+
+.film {
+  width: 90%;
+  max-width: 1146px;
+  margin: 0 auto;
+  padding: 7% 0;
+}
+.tags {
+  display: flex;
+  align-items: center;
+  opacity: 0.4;
+  color: #e5e5e5;
+  font-size: 16px;
+  line-height: 140%;
+}
+.tags > * {
+  margin-right: 15px;
+}
+.age {
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 2px;
+  padding: 1px 5px;
+}
+.descr {
+  width: 460px;
+  margin-bottom: 36px;
+  font-size: 21px;
+  line-height: 140%;
+}
+
+.button {
+  padding: 10px 25px 12px;
+  font-size: 16px;
+  line-height: 140%;
+  color: #ffffff;
+  border-radius: 6px;
+  border: none;
+}
+
+.button:hover {
+  color: #f7e2e2;
+  transition: color 0.3s linear;
+}
+
+.button-primary {
+  margin-right: 15px;
+  background: #ea6e20;
+}
+
+.button-default {
+  background: #2f2f2f;
+}
+
+.button-text {
+  margin-left: 10px;
+  vertical-align: text-bottom;
+}
+
+@media (max-width: 768px) {
+  .app {
+    height: auto;
+    padding-bottom: 400px;
+  }
+  .film {
+    padding-top: 2%;
+  }
+  .descr {
+    font-size: 16px;
+    max-width: 333px;
+  }
+  .film-logo {
+    max-width: 100%;
+  }
+  .tags {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 576px) {
+  .app {
+    padding-bottom: 350px;
+    background-size: 250px;
+    background: url("../img/cover-image.png") no-repeat bottom center/300px;
+  }
+  .button-text {
+    display: none;
+  }
+  .user_name {
+    display: none;
+  }
+  video {
+    display: none;
+  }
+}
